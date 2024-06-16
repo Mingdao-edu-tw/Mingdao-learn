@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>互動式介面</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #e0f7fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      height: 100px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      text-decoration: none;
+      transition: transform 0.2s;
+    }
+    .button img {
+      max-width: 80%;
+      max-height: 80%;
+    }
+    .button:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="https://example.com/1" class="button"><img src="images/icon1.png" alt="校安中心"></a>
+    <a href="https://example.com/2" class="button"><img src="images/icon2.png" alt="即時課表"></a>
+    <a href="https://example.com/3" class="button"><img src="images/icon3.png" alt="訊息通知"></a>
+    <!-- 按鈕依此類推 -->
+  </div>
+</body>
+</html>
